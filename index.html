@@ -26,17 +26,19 @@
             width: 100vw; /* Usa toda a largura da viewport */
             height: auto; /* Mantém a proporção da imagem */
             display: block;
-            margin: 20px auto; /* Adiciona um espaço de 20px entre as imagens */
+            margin: 40px 0; /* Adiciona uma margem de 40px acima e abaixo de cada imagem */
         }
         .btn {
             display: block;
-            position: absolute;
-            bottom: 40px;
-            left: 20px;
-            width: 140px;
-            height: 40px;
+            position: relative;
+            margin-top: -120px; /* Move o botão para cima, ficando sobre a última imagem */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 60px;
             background-color: transparent;
             border: none;
+            z-index: 100;
         }
     </style>
 </head>
