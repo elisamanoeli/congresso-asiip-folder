@@ -8,45 +8,57 @@
     <!-- Meta Tags para Pre-visualização -->
     <meta property="og:title" content="Congresso ASIIP - Inscreva-se Agora!" />
     <meta property="og:description" content="Participe do I Congresso de Papiloscopia da ASIIP - Comparação Facial Humana." />
-    <meta property="og:image" content="https://elisamanoeli.github.io/congresso-asiip-folder/pag1.jpg" />
+    <meta property="og:image" content="https://elisamanoeli.github.io/congresso-asiip-folder/PAG1.jpg" />
     <meta property="og:url" content="https://congreapp-4jggtt8bjmstiirv3bexs8.streamlit.app/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://elisamanoeli.github.io/congresso-asiip-folder/pag1.jpg" />
+    <meta name="twitter:image" content="https://elisamanoeli.github.io/congresso-asiip-folder/PAG1.jpg" />
 
     <style>
         body {
+            text-align: center;
             background-color: #f0f2f6;
             margin: 0;
             padding: 0;
-            text-align: center;
-            overflow-x: hidden;
         }
         img {
-            width: 1900px; /* Define a largura exata */
-            height: 900px; /* Define a altura exata */
+            width: 100%;
+            max-width: 1920px;
+            height: auto;
             display: block;
-            margin: 40px auto; /* Adiciona uma margem de 40px acima e abaixo de cada imagem */
+            margin: 0 auto;
         }
         .btn {
             display: block;
-            position: relative;
-            margin-top: -120px; /* Move o botão para cima, ficando sobre a última imagem */
+            position: absolute;
+            bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
-            width: 200px;
-            height: 60px;
+            width: 300px;
+            height: 100px;
             background-color: transparent;
             border: none;
-            z-index: 100;
+            cursor: pointer;
+        }
+        .page {
+            position: relative;
+            margin-bottom: 50px;
         }
     </style>
 </head>
 <body>
-    <img src="pag1.jpg" alt="Folder Congresso ASIIP - Página 1">
-    <img src="pag2.jpg" alt="Folder Congresso ASIIP - Página 2">
-    <img src="pag3.jpg" alt="Folder Congresso ASIIP - Página 3">
-    <img src="pag4.jpg" alt="Folder Congresso ASIIP - Página 4">
-    <a href="https://congreapp-4jggtt8bjmstiirv3bexs8.streamlit.app/" class="btn"></a>
+    <div class="page">
+        <img src="pag1.jpg" alt="Folder Congresso ASIIP - Página 1">
+    </div>
+    <div class="page">
+        <img src="pag2.jpg" alt="Folder Congresso ASIIP - Página 2">
+    </div>
+    <div class="page">
+        <img src="pag3.jpg" alt="Folder Congresso ASIIP - Página 3">
+    </div>
+    <div class="page">
+        <img src="pag4.jpg" alt="Folder Congresso ASIIP - Página 4">
+        <a href="https://congreapp-4jggtt8bjmstiirv3bexs8.streamlit.app/" class="btn"></a>
+    </div>
 </body>
 </html>
